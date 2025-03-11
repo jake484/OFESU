@@ -9,12 +9,28 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    NAvatar: typeof import('naive-ui')['NAvatar']
     NButton: typeof import('naive-ui')['NButton']
     NCard: typeof import('naive-ui')['NCard']
     NForm: typeof import('naive-ui')['NForm']
     NFormItem: typeof import('naive-ui')['NFormItem']
+    NGi: typeof import('naive-ui')['NGi']
+    NGrid: typeof import('naive-ui')['NGrid']
+    NGridItem: typeof import('naive-ui')['NGridItem']
+    NIcon: typeof import('naive-ui')['NIcon']
     NInput: typeof import('naive-ui')['NInput']
+    NInputNumber: typeof import('naive-ui')['NInputNumber']
     NLayout: typeof import('naive-ui')['NLayout']
     NLayoutContent: typeof import('naive-ui')['NLayoutContent']
+    NLayoutFooter: typeof import('naive-ui')['NLayoutFooter']
+    NLayoutHeader: typeof import('naive-ui')['NLayoutHeader']
+    NLayoutSider: typeof import('naive-ui')['NLayoutSider']
+    NList: typeof import('naive-ui')['NList']
+    NListItem: typeof import('naive-ui')['NListItem']
+    NProgress: typeof import('naive-ui')['NProgress']
+    NSkeleton: typeof import('naive-ui')['NSkeleton']
+    NSpace: typeof import('naive-ui')['NSpace']
+    NTag: typeof import('naive-ui')['NTag']
+    NThing: typeof import('naive-ui')['NThing']
   }
 }
