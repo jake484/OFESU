@@ -26,6 +26,7 @@ export default defineConfig({
     })
   ],
   server: {
+    port: 3000,
     proxy: {
       // 配置代理规则
       '/api': {

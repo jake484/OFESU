@@ -1,5 +1,18 @@
-# Vue 3 + TypeScript + Vite
+# OFESU
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+储能单元优化调度系统(Optimization and scheduling system for energy storage units)
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 启动前端
+
+```bash
+npm install
+npm run dev
+```
+
+## 启动后端
+
+打开新终端，进入`julia-src`文件中执行以下命令：
+
+```bash
+julia main.jl true
+```
