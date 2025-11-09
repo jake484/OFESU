@@ -83,7 +83,7 @@ function julia_main(async=true)
     # 后端服务相应路由，接受前端传入的参数，调用优化总函数，返回优化求解结果。
     @post "/optimize" function (req)
         # this will convert the request body into a Julia Dict
-        paras = JSON.parse(String(req.body))
+        paras = JSON.parse(String(req.body)) |> Dict
         @show paras
         # 返回数据，匹配前端request要求的格式
         if checkParasIsLegal(paras)
@@ -123,7 +123,7 @@ function julia_main(async=true)
     @info "正在预编译......"
     # 开启服务前，先执行一次，等价于预编译
     begin
-        paras = JSON.parse(read(joinpath(@__DIR__, "example.json"), String))
+        paras = JSON.parse(read(joinpath(@__DIR__, "example.json"), String)) |> Dict
         checkParasIsLegal(paras)
         optimize()
     end
